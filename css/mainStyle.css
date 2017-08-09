@@ -22,11 +22,28 @@ nav{
 	background-color: #121212;
 	padding: 3px 20px;
 }
-nav ul li{
+nav menu li{
 	display: inline-block;
 	text-align: center;
 	padding: 0 10px;
 	width: 100px;
+	border-radius: 4px;
+}
+nav menu li:hover{
+	background-color: #2F2F2F;
+}
+nav menu li a{
+	text-decoration: none;
+	color:#FFF;
+}
+nav ul{
+	float:right;
+}
+nav ul li{
+	display: inline-block;
+	text-align: center;
+	padding: 0 10px;
+	width: 40px;
 	border-radius: 4px;
 }
 nav ul li:hover{
