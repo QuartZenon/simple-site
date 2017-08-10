@@ -37,7 +37,6 @@ nav menu li:hover{
 	background-color: #2F2F2F;
 }
 nav menu li a{
-	text-decoration: none;
 	color:#FFF;
 }
 /*
@@ -104,6 +103,7 @@ div.right-column form[id=auth] input{
 	border:0;
 	height: 21px;
 	padding: 0 10px;
+	font-family: 'ProbaNav2 Regular';
 }
 div.right-column form[id=auth] input[name=login]{
 	border-radius: 4px 4px 0 0;
@@ -112,27 +112,28 @@ div.right-column form[id=auth] input[name=button]{
 	background-color: #606060;
 	border-radius: 0 0 4px 4px;
 	width: 200px;
+	color: #1F1F1F;
 }
 
 
 /*---- Categories ----*/
 div.right-column section.categories ul li{
-	width: auto;
 	background-color: #606060;
 	display: block;
-	height: 30px;
 	border-bottom-width: 2px;
-}
-div.right-column section.categories ul li:hover{
-	background-color: #C0C0C0;
-}
-div.right-column section.categories ul li a{
-	color: #1F1F1F;
-	margin:auto;
+	text-align: center;
+	padding: 5px;
 }
 div.right-column section.categories ul li.first{
 	border-radius: 4px 4px 0 0;
 }
 div.right-column section.categories ul li.last{
 	border-radius: 0 0 4px 4px;
+}
+div.right-column section.categories ul li:hover{
+	background-color: #C0C0C0;
+}
+div.right-column section.categories ul li a{
+	color: #1F1F1F;
+	padding: 5px 40px;
 }
