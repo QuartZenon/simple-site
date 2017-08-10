@@ -1,7 +1,11 @@
+/*---- Fonts ----*/
 @font-face {
     font-family: 'ProbaNav2 Regular'; /* Имя шрифта */
     src: url(../fonts/ProbaNav2-Regular.ttf); /* Путь к файлу со шрифтом */
 }
+
+
+/*---- Template ----*/
 *{
 	margin: 0;
 	padding: 0;
@@ -15,9 +19,9 @@ body a{
 	text-decoration: none;
 	color: #C0C0C0;
 }
-body a :hover{
-	color: #;
-}
+
+
+/*---- Navigation ----*/
 nav{
 	background-color: #121212;
 	padding: 3px 20px;
@@ -36,6 +40,7 @@ nav menu li a{
 	text-decoration: none;
 	color:#FFF;
 }
+/*
 nav ul{
 	float:right;
 }
@@ -52,46 +57,82 @@ nav ul li:hover{
 nav ul li a{
 	text-decoration: none;
 	color:#FFF;
-}
+}*/
+
+
+/*----  ----*/
 div.content{
 	margin: 0 auto;
 	max-width: 1100px;
 }
+
+
+/*---- Left column ----*/
 main {
 	float: left;
 	width: calc(100% - 300px);
 }
+
+
+/*---- Right column ----*/
 div.right-column{
 	width: 250px;
 	float: left;
 }
-div.right-column fieldset{
+div.right-column section{
 	width:200px;
-	margin:0 auto 10px;
-	padding:5px;
-	border:1;
-	border-radius: 10px 0 10px 0;
-}
-div.right-column fieldset input{
-	width: 180px;
-	margin:0;
-	border:0;
-	height: 21px;
-	padding: 0 10px;
-}
-div.right-column fieldset input[name=login]{
-	border-radius: 4px 4px 0 0;
-}
-div.right-column fieldset input[name=button]{
-	border-radius: 0 0 4px 4px;
-	width: 200px;
-
+	margin:5px auto 15px;
+	border:solid 4px #1A1A1A;
+	border-radius: 4px;
 }
 
+
+/*---- Article ----*/
 main article{
 	border-bottom: solid 1px #141414;
 }
 main article div.datetime{
 	float: right; 
 	margin:2px 10px 0 0;
+}
+
+
+/*---- Auth form ----*/
+div.right-column form[id=auth] input{
+	width: 180px;
+	margin:0;
+	border:0;
+	height: 21px;
+	padding: 0 10px;
+}
+div.right-column form[id=auth] input[name=login]{
+	border-radius: 4px 4px 0 0;
+}
+div.right-column form[id=auth] input[name=button]{
+	background-color: #606060;
+	border-radius: 0 0 4px 4px;
+	width: 200px;
+}
+
+
+/*---- Categories ----*/
+div.right-column section.categories ul li{
+	width: auto;
+	background-color: #606060;
+	display: block;
+	height: 30px;
+	border-bottom-width: 2px;
+}
+div.right-column section.categories ul li:hover{
+	background-color: #C0C0C0;
+}
+div.right-column section.categories ul li a{
+	color: #1F1F1F;
+	margin:auto;
+}
+div.right-column section.categories ul li.first{
+	border-radius: 4px 4px 0 0;
+}
+div.right-column section.categories ul li.last{
+	border-radius: 0 0 4px 4px;
 }
