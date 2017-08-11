@@ -94,6 +94,22 @@ main article div.datetime{
 	float: right; 
 	margin:2px 10px 0 0;
 }
+main article ul.tags li{
+	display: inline-block;
+	padding: 4px 10px;
+	margin: 2px;
+	padding-left: 0;
+	margin-left: 0;
+}
+main article ul.tags li a{
+	padding: 4px 10px;
+	margin:1px;
+}
+main article ul.tags li a:hover{
+	border: solid 1px #606060;
+	background-color: #2F2F2F;
+	margin: 0;
+}
 
 
 /*---- Auth form ----*/
@@ -113,6 +129,9 @@ div.right-column form[id=auth] input[name=button]{
 	border-radius: 0 0 4px 4px;
 	width: 200px;
 	color: #1F1F1F;
+}
+div.right-column form[id=auth] input[name=button]:hover{
+	background-color: #C0C0C0;
 }
 
 
